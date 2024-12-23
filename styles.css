@@ -6,6 +6,8 @@ html {
 }
 body {
     margin: 0;
+    background-image: url("scenery.jpg");
+    background-size: cover;
 }
 
 p {
@@ -21,12 +23,18 @@ p {
     
 }
 
+.form {
+    border-radius: 40px;
+    border: 2px solid black;
+}
 
 .form, .signup-form {
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding: 16px;
+    background-color: #FFFDF2;
+    opacity: 0.8;
 }
 
 .text-box {
