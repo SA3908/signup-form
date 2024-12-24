@@ -13,6 +13,16 @@ body {
 p {
     margin: 8px;
 }
+
+a {
+    color: #000000;
+    font-weight: bold;
+    transition: 0.1s;
+}
+
+a:hover {
+    color: #13aa52;
+}
 .wrapper {
     display: flex;
     flex-direction: row;
@@ -26,13 +36,14 @@ p {
 .form {
     border-radius: 40px;
     border: 2px solid black;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .form, .signup-form {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 16px;
+    padding: 8px;
     background-color: #FFFDF2;
     opacity: 0.8;
 }
@@ -44,6 +55,10 @@ p {
     margin: 8px;
 }
 
+.signup-form {
+   border-radius: 12px;
+   font-size: 16px;
+}
 .signup-form div {
     display: flex;
     padding: 4px;
@@ -51,13 +66,43 @@ p {
     align-items: center;
 }
 
+.signup-form fieldset {
+    border: none;
+}
+.signup-form input {
+    border: none;
+    border-bottom: 1px solid grey;
+    background-color: #FFFDF2;
+    font-size: 16px;
+}
+
+.signup-form input:valid {
+    border-bottom: 1px solid #13aa52;
+}
+
+.signup-form input:user-invalid {
+    border-bottom: 1px solid #ff0000;
+}
 .account {
     display: flex;
     flex-direction: column;
+    padding: 8px;
 }
 
 .account button {
     width: 120px;
     height: 40px;
     margin: 8px;
+    
+    border: 1px solid black;
+    color: #fff;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+    background-color: #13aa52;
+    transition: 0.1s;
 }
+
+.account button:hover {
+    box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+    transform: translateY(-4px);
+  }
